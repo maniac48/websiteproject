@@ -274,7 +274,7 @@ section {
   align-items: center;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  background-image: url(/Images/Background\ Image\ For\ Website\ Cards.png);
+  background-image: url(/websiteproject/Images/Background\ Image\ For\ Website\ Cards.png);
   color: white;
   font-family: "Inter";
   font-weight: 500;
@@ -326,7 +326,7 @@ section {
   min-height: 829px;
   height: auto;
   padding: 0 20px;
-  background-image: url("/Images/transparent_bubbles_background.png");
+  background-image: url("/websiteproject/Images/transparent_bubbles_background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -575,7 +575,7 @@ footer {
   padding-right: 2rem;
   gap: 5rem;
   border-radius: 15px;
-  background-image: url("/Images/Background\ Image\ For\ Website\ Cards.png");
+  background-image: url("/websiteproject/Images/Background\ Image\ For\ Website\ Cards.png");
 }
 .wrapper_poza_si_servicii img {
   max-width: 29rem;
@@ -631,5 +631,5 @@ footer {
   font-size: 1.5em;
 }
 #poza_despre_noi {
-  background-image: url("/Images/poza_despre.jpg");
+  background-image: url("/websiteproject/Images/poza_despre.jpg");
 }
