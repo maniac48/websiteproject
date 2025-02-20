@@ -1,0 +1,635 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+  padding: 0.7em 2em;
+  box-shadow: 1px 2px 5px rgb(85, 84, 84);
+}
+.container_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  max-width: 1366px;
+  height: 90px;
+  margin: auto;
+}
+.wraper_logo {
+  display: flex;
+  max-width: 20rem;
+  max-height: 10rem;
+}
+.wraper_logo img {
+  width: 100%;
+  height: auto;
+}
+body {
+  margin: 0px;
+}
+section {
+  margin-bottom: 40px;
+}
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+.navbar a {
+  color: #38b6ff;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  font-size: 1.4em;
+  font-family: "Be Vietnam Pro";
+  transition: all 0.5s;
+}
+.navbar a:hover {
+  color: #1788ca;
+}
+.nav_link::after {
+  content: "";
+  height: 3.5px;
+  width: 100%;
+  background: #004aad;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  opacity: 0;
+  transition: all 0.5s;
+  pointer-events: none;
+}
+.nav_link:hover::after {
+  opacity: 1;
+}
+.navbar li:last-child {
+  border-radius: 24px;
+  border: solid #004aad;
+  background-color: #004aad;
+  padding: 7.5px;
+  transition: background-color 0.4s ease;
+}
+.navbar li:last-child:hover {
+  background-color: rgb(231, 231, 231);
+}
+.navbar li:last-child a {
+  color: white;
+  font-size: 1.31rem;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 27px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #38b6ff;
+}
+@media (max-width: 1100px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 90px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
+/* HERO SECTION CSS */
+.container_hero {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.carousel-item {
+  max-height: 75vh;
+  min-height: 600px;
+}
+.carousel-caption {
+  bottom: 170px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.carousel-caption h3 {
+  margin-top: 0;
+  font-size: 1.8em;
+  font-family: "Lily Script One";
+}
+.carousel-caption h1 {
+  margin-top: 0;
+  font-size: 4em;
+  font-family: "Inter";
+  font-weight: 700;
+}
+#hero_sparkle {
+  font-size: 2em;
+}
+.carousel-item img {
+  min-height: 600px;
+}
+.carousel-inner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0, 0.6);
+  z-index: 1;
+}
+/*.hero_section {
+  width: 100%;
+  height: 658px;
+  background-image: url("/Images/hero_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero_section h3 {
+  margin-top: 0;
+  font-size: 1.8em;
+  font-family: "Lily Script One";
+  text-shadow: 1px 1px 2px black;
+}
+.hero_section h1 {
+  margin-top: 0;
+  font-size: 4em;
+  font-family: "Inter";
+  font-weight: 700;
+  text-shadow: 1px 1px 2px black;
+}*/
+.hero_button {
+  display: inline-block;
+  padding: 17px 20px;
+  background-color: #38b6ff;
+  border: solid #38b6ff;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: "Inter";
+  font-weight: 600;
+  border-radius: 40px;
+  transition: background-color 0.4s ease;
+  margin: auto;
+}
+.hero_button:hover {
+  background-color: white;
+  color: #38b6ff;
+}
+/* SERVICES SECTION CSS */
+.services_section {
+  padding: 0 50px;
+  text-align: center;
+}
+.container_services {
+  display: flex;
+  flex-direction: column;
+  max-width: 1366px;
+  gap: 40px;
+  margin: auto;
+}
+.services_section h1 {
+  margin-top: 0;
+  font-size: 2.7em;
+  color: #004aad;
+  text-align: center;
+  font-family: "Leckerli One";
+}
+.wraper_cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Makes the cards responsive to size chnages */
+  gap: 4rem;
+}
+@media (max-width: 768px) {
+  .wraper_cards {
+    flex-direction: column; /* Stack image and text vertically on smaller screens */
+    align-items: center;
+  }
+}
+.card_services {
+  position: relative;
+  width: 404px;
+  height: 420px;
+}
+.container_card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+.container_card:hover {
+  transform: rotateY(180deg);
+}
+.container_card img,
+.container_card p {
+  width: 100%;
+  height: 318px;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-image: url(/Images/Background\ Image\ For\ Website\ Cards.png);
+  color: white;
+  font-family: "Inter";
+  font-weight: 500;
+  margin: 0;
+}
+.container_card h4 {
+  font-size: 1.7em;
+  color: #38b6ff;
+  font-family: "Lemon";
+  padding: 30px 0;
+}
+.front_of_card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  text-align: center;
+  box-shadow: 1px 2px 10px rgb(12, 12, 12, 0.75);
+  border-radius: 12px;
+}
+.back_of_card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  box-shadow: 1px 2px 10px rgb(12, 12, 12, 0.75);
+  border-radius: 12px;
+}
+
+#more_services_button {
+  color: #38b6ff;
+  background-color: white;
+  border: solid #004aad;
+  transition: background-color 0.4s ease;
+}
+#more_services_button:hover {
+  background-color: #38b6ff;
+  color: white;
+  border: solid #38b6ff;
+}
+
+/* EXPLAINER SECTION CSS */
+.explainer_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 829px;
+  height: auto;
+  padding: 0 20px;
+  background-image: url("/Images/transparent_bubbles_background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+}
+.container_explainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.container_explainer img {
+  max-width: 45%;
+  height: auto;
+}
+
+.container_text_explainer {
+  max-width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container_text_explainer h3,
+.container_text_explainer h4,
+.container_text_explainer p {
+  margin: 0 0 20px 0; /* Add space below the elements */
+}
+.container_text_explainer p {
+  font-family: "Inter";
+  font-weight: 500;
+}
+.container_text_explainer h3 {
+  font-size: 2.5em;
+  color: #018575;
+  font-family: "Lily Script One";
+}
+
+.container_text_explainer h4 {
+  font-size: 1.7em;
+  font-family: "Lemon";
+  color: #38b6ff;
+}
+
+@media (max-width: 870px) {
+  .container_explainer {
+    flex-direction: column; /* Stack image and text vertically on smaller screens */
+    text-align: center; /* Center the text */
+  }
+
+  .container_explainer img,
+  .container_text_explainer {
+    max-width: 90%; /* Make image and text container take full width */
+  }
+}
+#green_button {
+  margin-left: 1em;
+  background-color: #018575;
+  border: solid #018575;
+}
+#green_button:hover {
+  background-color: white;
+  color: #018575;
+}
+
+/* TESTIMONIALS SECTION CSS */
+.testimonials_section {
+  width: 100%;
+  height: 210px;
+  background-color: #666666;
+  margin-bottom: 0;
+}
+.testimoniale_titlu {
+  color: #38b6ff;
+  font-size: 1.4rem;
+}
+.nume_review {
+  font-size: 1.4rem;
+}
+.swiper-slide p {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1em;
+}
+.container_swiper {
+  max-width: 1100px;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 50px;
+  color: white;
+}
+.swiper .Testimonials-Swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+
+/* FOOTER CSS */
+footer {
+  height: auto;
+  background-color: #004aad;
+  padding: 20px 160px;
+}
+.container_footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: top;
+  max-width: 1366px;
+  margin: auto;
+}
+.container_footer h4 {
+  font-size: 1.1em;
+  font-family: "Lemon";
+}
+.container_footer p {
+  font-family: "Inter";
+  font-weight: 500;
+}
+.box_1_footer {
+  width: 47%;
+  color: white;
+}
+.footer_card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+.footer_card i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 1000px;
+  background-color: #38b6ff;
+  box-shadow: 1px 2px 10px rgb(12, 12, 12);
+}
+.footer_card_text h4 {
+  font-family: "Orelega One";
+  font-size: 1.2em;
+}
+.footer_card_text h5 {
+  font-size: 1.1em;
+  font-family: "Oregano";
+}
+.box_2_footer {
+  width: 22%;
+  color: white;
+}
+.navbar_footer ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+.navbar_footer li {
+  padding-bottom: 18px;
+}
+.navbar_footer a {
+  color: white;
+  text-decoration: none;
+  font-family: "Inter";
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.navbar_footer a:hover {
+  color: #8abafa;
+}
+.box_3_footer {
+  width: 22%;
+  color: white;
+}
+.box_3_text {
+  padding-left: 10px;
+}
+.box_3_text a {
+  text-decoration: none;
+  color: white;
+}
+#copywrite {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 0.92em;
+  color: rgba(153, 153, 153, 0.75);
+}
+
+@media (max-width: 940px) {
+  footer {
+    padding: 20px 0;
+  }
+  .container_footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  #copywrite,
+  .box_1_footer {
+    display: none;
+  }
+  .box_2_footer,
+  .box_3_footer {
+    width: 100%;
+  }
+  .navbar_footer ul {
+    padding: 0;
+  }
+}
+
+/* SECONDARY PAGES CSS */
+.secondary_hero_section {
+  width: 100%;
+  height: auto;
+}
+
+/*  CCS Pagina Servicii  */
+
+.wrapper_poza_si_servicii {
+  display: flex;
+  flex-wrap: wrap;
+  width: 65vw;
+  min-height: 21rem;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  gap: 5rem;
+  border-radius: 15px;
+  background-image: url("/Images/Background\ Image\ For\ Website\ Cards.png");
+}
+.wrapper_poza_si_servicii img {
+  max-width: 29rem;
+  max-height: 17.5rem;
+  border-radius: 15px;
+}
+.wrapper_poza_si_servicii h4,
+.wrapper_poza_si_servicii h3 {
+  text-align: left;
+  color: white;
+}
+.wrapper_text_la_servicii {
+  min-width: 58vw;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper_text_la_servicii p {
+  max-width: 75ch;
+  font-size: 1.2rem;
+  font-family: "Inter";
+  font-weight: 600;
+  color: #004aad;
+}
+
+/*   */
+.wrapper_text {
+  padding: 30px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
+.wrapper_text h1 {
+  font-size: 2.7em;
+  color: #004aad;
+  font-family: "Leckerli One";
+}
+.wrapper_services_p {
+  max-width: 1200px;
+  display: flex;
+  gap: 40px;
+  text-align: center;
+}
+.wrapper_services_p img {
+  width: 400px;
+  height: 400px;
+}
+.wrapper_services_p p {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1.5em;
+}
+#poza_despre_noi {
+  background-image: url("/Images/poza_despre.jpg");
+}
