@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Images/favicon-16x16.png" />
+    <title>Lena Diamond Clean</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Leckerli+One&family=Lemon&family=Lily+Script+One&family=Orelega+One&family=Be+Vietnam+Pro&family=Oregano&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap si swiperjs -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- bootstrap carousel hero page -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/63eb5e5b56.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <!-- js carousel hero page -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <header>
+      <div class="container_header">
+        <div class="wraper_logo">
+          <a href="index.html">
+            <img src="/Images/LenaDiamond-Logo.png" alt="Logo" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav_link">Acasa</a>
+            </li>
+            <li class="nav-item">
+              <a href="servicii.html" class="nav_link">Servicii</a>
+            </li>
+            <li class="nav-item">
+              <a href="despre_noi.html" class="nav_link">Despre Noi</a>
+            </li>
+            <li class="nav-item">
+              <a href="" id="tel_button"> +40 741.928.316</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero_section">
+        <div class="container_hero">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="/Images/hero_background.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption">
+                  <p
+                    class="animated fadeInUp"
+                    style="animation-delay: 1s"
+                    id="hero_sparkle"
+                  >
+                    ✧₊⁺
+                  </p>
+                  <h3 class="animated fadeInUp" style="animation-delay: 1s">
+                    Lena Diamond Clean
+                  </h3>
+                  <h1
+                    class="animated fadeInUp d-none d-md-block"
+                    style="animation-delay: 1s"
+                  >
+                    Servicii Profesionale De <br />
+                    Curatenie
+                  </h1>
+                  <p class="animated fadeInUp" style="animation-delay: 1s">
+                    <a href="" class="hero_button">+40 741.928.316</a>
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/Images/hero_background2.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption">
+                  <p
+                    class="animated fadeInUp"
+                    style="animation-delay: 1s"
+                    id="hero_sparkle"
+                  >
+                    ✧₊⁺
+                  </p>
+                  <h3 class="animated fadeInUp" style="animation-delay: 1s">
+                    Lena Diamond Clean
+                  </h3>
+                  <h1
+                    class="animated fadeInUp d-none d-md-block"
+                    style="animation-delay: 1s"
+                  >
+                    Ne Ocupăm De <br />
+                    Casa Ta Cu Grijă
+                  </h1>
+                  <p class="animated fadeInUp" style="animation-delay: 1s">
+                    <a href="" class="hero_button">Afla Mai Multe</a>
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/Images/hero_background3.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption">
+                  <p
+                    class="animated fadeInUp"
+                    style="animation-delay: 1s"
+                    id="hero_sparkle"
+                  >
+                    ✧₊⁺
+                  </p>
+                  <h3 class="animated fadeInUp" style="animation-delay: 1s">
+                    Lena Diamond Clean
+                  </h3>
+                  <h1
+                    class="animated fadeInUp d-none d-md-block"
+                    style="animation-delay: 1s"
+                  >
+                    Un Singur Apel Și <br />
+                    Totul E Curat
+                  </h1>
+                  <p class="animated fadeInUp" style="animation-delay: 1s">
+                    <a href="" class="hero_button">+40 741.928.316</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!--
+        <div class="container_hero">
+          <h3>Lena Diamond Clean</h3>
+          <h1>
+            Servicii Profesionale De <br />
+            Curatenie
+          </h1>
+          <a href="" class="hero_button">Afla Mai Multe</a>
+        </div>
+        -->
+      </section>
+
+      <!-- SERVICES SECTION HTML -->
+      <section class="services_section">
+        <div class="container_services">
+          <h1>Serviciile Noastre</h1>
+          <div class="wraper_cards">
+            <div class="card_services">
+              <div class="container_card">
+                <div class="front_of_card">
+                  <img src="/Images/spatii_comerciale.jpg" />
+                  <h4>Spatii Comerciale</h4>
+                </div>
+                <div class="back_of_card">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam delectus, molestias asperiores ea amet dicta veritatis
+                    eaque optio minima dolore veniam maiores obcaecati illo
+                    neque repellendus, error ad, impedit suscipit.
+                  </p>
+                  <h4>Spatii Comerciale</h4>
+                </div>
+              </div>
+            </div>
+            <div class="card_services">
+              <div class="container_card">
+                <div class="front_of_card">
+                  <img src="/Images/meeting-room.jpg" />
+                  <h4>Birouri</h4>
+                </div>
+                <div class="back_of_card">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam delectus, molestias asperiores ea amet dicta veritatis
+                    eaque optio minima dolore veniam maiores obcaecati illo
+                    neque repellendus, error ad, impedit suscipit.
+                  </p>
+                  <h4>Birouri</h4>
+                </div>
+              </div>
+            </div>
+            <div class="card_services">
+              <div class="container_card">
+                <div class="front_of_card">
+                  <img src="/Images/heyho.jpg" />
+                  <h4>Apartamente</h4>
+                </div>
+                <div class="back_of_card">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam delectus, molestias asperiores ea amet dicta veritatis
+                    eaque optio minima dolore veniam maiores obcaecati illo
+                    neque repellendus, error ad, impedit suscipit.
+                  </p>
+                  <h4>Apartamente</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="" class="hero_button" id="more_services_button"
+            >Mai Multe Servicii</a
+          >
+        </div>
+      </section>
+      <!-- EXPLAINER SECTION HTML -->
+      <section class="explainer_section">
+        <div class="container_explainer">
+          <img src="/Images/cleaning_man.png" />
+          <div class="container_text_explainer">
+            <h3>Bine Ai Venit!</h3>
+            <h4>Servicii Profesionale <br />De Curatenie</h4>
+            <p>
+              Servicii de Încredere și de Calitate: Lena Diamond Clean crede că
+              un serviciu de calitate se bazează pe fiabilitate și încrederea
+              clienților, așa că facem tot posibilul pentru a asigura
+              profesioniști de încredere. Nu suntem un simplu serviciu de
+              curățenie obișnuit. Toți luptătorii noștri împotriva murdăriei
+              sunt legați prin contract, asigurați, verificați antecedentele și
+              sunt bine pregătiți înainte de a veni să curețe casa
+              dumneavoastră.
+            </p>
+            <div class="explainer_container_buttons">
+              <a href="" class="hero_button">COMERCIAL</a>
+              <a href="" class="hero_button" id="green_button">REZIDENTIAL</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- TESTIMONIALS SECTION HTML -->
+      <section class="testimonials_section">
+        <div class="container_swiper">
+          <!-- Swiper -->
+          <div class="swiper Testimonials-Swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h4 class="testimoniale_titlu">Testimoniale</h4>
+                <p>
+                  Prietenos, rapid și eficient! Fetele au făcut o treabă
+                  excelentă și ne-au lăsat casa strălucitoare!
+                </p>
+                <i class="fa-solid fa-quote-left"></i>
+                <h4 class="nume_review">Laura R.</h4>
+              </div>
+              <div class="swiper-slide">
+                <h4 class="testimoniale_titlu">Testimoniale</h4>
+                <p>
+                  Produse ecologice și rezultate excelente! Locuința mea
+                  strălucește.
+                </p>
+                <i class="fa-solid fa-quote-left"></i>
+                <h4 class="nume_review">Mihai T.</h4>
+              </div>
+              <div class="swiper-slide">
+                <h4 class="testimoniale_titlu">Testimoniale</h4>
+                <p>
+                  Echipa de curățenie a fost foarte profesionistă și
+                  punctuală.<br />
+                  De fiecare dată când vin, casa mea arată impecabil, iar
+                  atenția la detalii este remarcabilă. Îi recomand cu încredere!
+                </p>
+                <i class="fa-solid fa-quote-left"></i>
+                <h4 class="nume_review">Ioana M.</h4>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <!-- FOOTER HTML -->
+      <footer>
+        <div class="outer_container_footer">
+          <div class="container_footer">
+            <div class="box_1_footer">
+              <h4>Lena Diamond Clean</h4>
+              <hr />
+              <div class="wraper_footer_cards">
+                <div class="footer_card">
+                  <i
+                    class="fa-solid fa-phone fa-2xl"
+                    style="color: #ffffff"
+                  ></i>
+                  <div class="footer_card_text">
+                    <h4>Faceti Programare</h4>
+                    <h5>+40 741.928.316</h5>
+                  </div>
+                </div>
+                <div class="footer_card">
+                  <i
+                    class="fa-solid fa-envelope fa-2xl"
+                    style="color: #ffffff"
+                  ></i>
+                  <div class="footer_card_text">
+                    <h4>Trimiteti Feedback</h4>
+                    <h5>Mai Buni Impreuna.</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box_2_footer">
+              <h4>Quick Links</h4>
+              <hr />
+              <nav class="navbar_footer">
+                <ul>
+                  <li><a href="index.html">Acasa</a></li>
+                  <li><a href="servicii.html">Servicii</a></li>
+                  <li><a href="despre_noi.html">Despre Noi</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="box_3_footer">
+              <h4>Contact</h4>
+              <hr />
+              <div class="box_3_text">
+                <p>
+                  615200 Neamt, Targu Neamt Str.<br />
+                  Prundului, Nr. 1
+                </p>
+                <p>
+                  Suna Acum: <a href="tel:+40 741 928 316"> +40 741.928.316</a>
+                </p>
+                <p>Email: suport@lenadiamondclean.ro</p>
+                <a
+                  href="https://www.facebook.com/lenuta.tardea.5"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-brands fa-facebook fa-lg"
+                    style="color: #ffffff"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <h5 id="copywrite">
+            Copyright © 2024 lenadiamondclean.ro, Toate drepturile rezervate.
+          </h5>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
