@@ -1,4 +1,4 @@
-var swiper = new Swiper(".Testimonials-Swiper", {
+var swiper = new Swiper(".testimonials-swiper", {
   spaceBetween: 30,
   grabCursor: true,
   loop: true,

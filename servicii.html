@@ -61,23 +61,6 @@
   </head>
 
   <body>
-    <!-- js carousel hero page -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-      crossorigin="anonymous"
-    ></script>
     <header>
       <div class="container_header">
         <div class="wraper_logo">
@@ -97,7 +80,7 @@
               <a href="despre_noi.html" class="nav_link">Despre Noi</a>
             </li>
             <li class="nav-item">
-              <a href="" id="tel_button"> +40 741.928.316</a>
+              <a href="" id="tel_button"> 📞+40 741.928.316</a>
             </li>
           </ul>
           <div class="hamburger">
@@ -110,75 +93,116 @@
     </header>
 
     <main>
-      <section class="secondary_hero_section">
-        <div class="wrapper_text">
-          <div class="wrapper_text_la_servicii">
-            <h1>Servicii Profesionale de <br />Curatenie</h1>
-          </div>
-          <div class="wrapper_poza_si_servicii">
-            <img src="/Images/poza_despre.jpg" />
+      <section class="services-hero-section">
+        <div class="services-hero-container">
+          <h1 class="services-hero-section__h1">
+            Servicii Profesionale de <br />Curatenie
+          </h1>
+          <div class="services-hero-card">
+            <img
+              class="services-hero-card__img"
+              src="/Images/poza_despre.jpg"
+            />
             <div>
-              <h3>Servicii Oferite:</h3>
-              <h4>- Prestari Servicii de Curatenie</h4>
-              <h4>- Spatii Comerciale</h4>
-              <h4>- Birouri</h4>
-              <h4>- Apartamente</h4>
-              <h4>- Spalare Podea</h4>
-              <h4>- Covoare</h4>
+              <h3 class="services-hero-card__h3">Servicii Oferite:</h3>
+              <h4 class="services-hero-card__h4">
+                - Prestari Servicii de Curatenie
+              </h4>
+              <h4 class="services-hero-card__h4">- Spatii Comerciale</h4>
+              <h4 class="services-hero-card__h4">- Birouri</h4>
+              <h4 class="services-hero-card__h4">- Apartamente</h4>
+              <h4 class="services-hero-card__h4">- Spalare Podea</h4>
+              <h4 class="services-hero-card__h4">- Covoare</h4>
             </div>
           </div>
-          <div class="wrapper_text_la_servicii">
-            <p>
-              Ești în căutarea unor servicii de curățenie de încredere în Târgu
-              Neamț? Noi suntem aici să te ajutăm! Suntem o firmă locală de
-              curățenie care oferă soluții complete pentru orice tip de spațiu:
-              de la locuințe și birouri, până la spații comerciale.
-            </p>
-            <p>
-              Echipa noastră este formată din oameni dedicați și bine pregătiți,
-              care folosesc echipamente moderne și produse de curățenie
-              ecologice, astfel încât să ne asigurăm că fiecare colț este
-              impecabil. Ne adaptăm mereu serviciile în funcție de nevoile tale,
-              fie că ai nevoie de o curățenie generală, de întreținere sau după
-              renovare. Cu noi, ai garanția unui mediu curat, sigur și plăcut,
-              fie acasă, fie la locul de muncă.
-            </p>
+          <p class="services-hero-section__p">
+            Ești în căutarea unor servicii de curățenie de încredere în Târgu
+            Neamț? Noi suntem aici să te ajutăm! Suntem o firmă locală de
+            curățenie care oferă soluții complete pentru orice tip de spațiu: de
+            la locuințe și birouri, până la spații comerciale.
+          </p>
+          <p class="services-hero-section__p">
+            Echipa noastră este formată din oameni dedicați și bine pregătiți,
+            care folosesc echipamente moderne și produse de curățenie ecologice,
+            astfel încât să ne asigurăm că fiecare colț este impecabil. Ne
+            adaptăm mereu serviciile în funcție de nevoile tale, fie că ai
+            nevoie de o curățenie generală, de întreținere sau după renovare. Cu
+            noi, ai garanția unui mediu curat, sigur și plăcut, fie acasă, fie
+            la locul de muncă.
+          </p>
+        </div>
+      </section>
+
+      <section class="reels-section">
+        <div class="reels-section-container">
+          <div class="reels-grid">
+            <video
+              class="reels__video"
+              src="/Videos/Reel5.mp4"
+              controls
+            ></video>
+            <video
+              class="reels__video"
+              src="/Videos/Reel4.mp4"
+              controls
+            ></video>
+            <video
+              class="reels__video"
+              src="/Videos/Reel3.mp4"
+              controls
+            ></video>
+            <video
+              class="reels__video"
+              src="/Videos/Reel2.mp4"
+              controls
+            ></video>
+            <video
+              class="reels__video"
+              src="/Videos/Reel6.mp4"
+              controls
+            ></video>
+            <video
+              class="reels__video"
+              src="/Videos/Reel1.mp4"
+              controls
+            ></video>
           </div>
         </div>
       </section>
 
       <!-- TESTIMONIALS SECTION HTML -->
-      <section class="testimonials_section">
-        <div class="container_swiper">
+      <section class="testimonials-section">
+        <div class="testimonials-container">
           <!-- Swiper -->
-          <div class="swiper Testimonials-Swiper">
+          <div class="swiper testimonials-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <h4>Testimoniale 1</h4>
-                <p>
-                  Prietenos, rapid și eficient! Fetele au făcut o treabă
-                  excelentă și ne-au lăsat casa strălucitoare!
+                <h4 class="testimonials-swiper__h4">Testimoniale</h4>
+                <p class="testimonials-swiper__p">
+                  Prietenos, rapid și eficient. Fetele au făcut<br />
+                  o treabă excelentă și ne-au lăsat casa strălucitoare!
                 </p>
                 <i class="fa-solid fa-quote-left"></i>
-                <h4 class="nume_review">Laura R.</h4>
+                <h3 class="testimonials-swiper__h3">Laura R.</h3>
               </div>
               <div class="swiper-slide">
-                <h4>Testimoniale 2</h4>
-                <p>
-                  Prietenos, rapid și eficient! Fetele au făcut o treabă
-                  excelentă și ne-au lăsat casa strălucitoare!
+                <h4 class="testimonials-swiper__h4">Testimoniale</h4>
+                <p class="testimonials-swiper__p">
+                  Produse ecologice și rezultate excelente.<br />
+                  Locuința mea strălucește!
                 </p>
                 <i class="fa-solid fa-quote-left"></i>
-                <h4 class="nume_review">Laura R.</h4>
+                <h3 class="testimonials-swiper__h3">Mihai T.</h3>
               </div>
               <div class="swiper-slide">
-                <h4>Testimoniale 3</h4>
-                <p>
-                  Prietenos, rapid și eficient! Fetele au făcut o treabă
-                  excelentă și ne-au lăsat casa strălucitoare!
+                <h4 class="testimonials-swiper__h4">Testimoniale</h4>
+                <p class="testimonials-swiper__p">
+                  Echipa de curățenie a fost foarte profesionistă și
+                  punctuală.<br />
+                  Îi recomand cu încredere!
                 </p>
                 <i class="fa-solid fa-quote-left"></i>
-                <h4 class="nume_review">Laura R.</h4>
+                <h3 class="testimonials-swiper__h3">Ioana M.</h3>
               </div>
             </div>
             <div class="swiper-button-next"></div>
@@ -253,7 +277,7 @@
             </div>
           </div>
           <h5 id="copywrite">
-            Copyright © 2024 lenadiamondclean.ro, Toate drepturile rezervate.
+            Copyright © 2025 lenadiamondclean.ro, Toate drepturile rezervate.
           </h5>
         </div>
       </footer>
